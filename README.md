@@ -42,3 +42,4 @@ Criado por Thiago Batista.
 
 Este projeto é de uso pessoal e não possui licença específica.
 # Th-links
+# Th-links
