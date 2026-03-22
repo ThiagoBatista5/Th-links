@@ -1,5 +1,5 @@
 # Paglinks
-Link: https://thiagobatista5.github.io/Pagina-de-Links/
+Link: https://thiagobatista5.github.io/Th-links/
 
 Uma página pessoal simples e elegante para apresentar meus projetos favoritos e links das minhas redes sociais.
 
