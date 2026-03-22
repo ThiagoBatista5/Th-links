@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(47, 4, 99, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(123, 174, 14, 0.751) 100%
+  );
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #121214;
+  margin-bottom: auto;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  line-height: 160%;
+}
+
+header {
+  padding-top: 34px;
+  height: calc(120px + 32px);
+  transition: 0.3s;
+}
+
+header div {
+  width: 120px;
+  margin: auto;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
+
+  border-radius: 50%;
+
+  display: flex;
+  padding: 4px;
+
+  transition: transform 0.3s;
+}
+
+header div:hover {
+  transform: scale(1.1);
+}
+
+header div img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main {
+  max-width: 600px;
+  width: 90%;
+  margin: 40px auto;
+
+  display: grid;
+  gap: 24px;
+}
+
+section {
+  color: white;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
+  padding-top: 5px;
+  padding-right: 6px;
+  padding-bottom: 0.9%;
+  border-radius: 10px;
+}
+section:hover {
+  border-radius: 15px;
+}
+div:hover {
+  border-radius: 30px 5px 30px 5px;
+}
+
+section div {
+  background-color: #2a2634;
+  opacity: 90%;
+  padding: 32px;
+  padding-top: 24px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+a {
+  text-decoration: none;
+}
+
+section h2 {
+  letter-spacing: -0.47px;
+}
+.projetos {
+  font-weight: 350;
+  color: #d9d9f2ef;
+}
+section p {
+  letter-spacing: -0.18px;
+  color: #a1a1aa;
+  font-weight: 300;
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+section ul li {
+  transition: transform 0.3s;
+}
+
+section ul li:hover {
+  transform: scale(1.1);
+}
+
+.pag-list img {
+  width: 150px;
+  border-radius: 15px;
+  margin: 5px;
+}
+.ia {
+  height: 200px;
+  transition: 0.2s;
+}
+.ia:hover {
+  height: 200px;
+  border-radius: 35px 5px 30px 5px;
+}
+.financeiro {
+  height: 200px;
+  transition: 0.2s;
+  opacity: 80%;
+}
+.financeiro:hover {
+  height: 210px;
+  transition: 0.2s;
+  border-radius: 30px 5px 30px 5px;
+}
+.Thlinks {
+  height: 200px;
+  transition: 0.2s;
+}
+.Thlinks:hover {
+  height: 210px;
+  transition: 0.2s;
+  border-radius: 30px 5px 30px 5px;
+}
+
+.channel-list img {
+  border-radius: 50%;
+  width: 70px;
+  border: 1px solid #443e54;
+}
+
+/* animation */
+
+header div {
+  animation: fromTop 0.5s 0.2s backwards;
+}
+
+main section {
+  animation: fromBottom 0.5s backwards;
+}
+
+main section:nth-child(1) {
+  animation-delay: 0;
+}
+
+main section:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+main section:nth-child(3) {
+  animation-delay: 0.4s;
+}
+#icones{
+  margin-left: 120px;
+}
+.redes {
+  font-size: 30px;
+  padding-top: 2px;
+  font-weight: 300;
+  color: #d9d9f2ef;
+}
+#linkedin {
+  font-size: 60px;
+  border-radius: 15px;
+  color: #e2d55cee;
+  transition: 0.2s;
+}
+#Instagram {
+  font-size: 60px;
+  border-radius: 15px;
+  color: #43e7ae88;
+  transition: 0.2s;
+}
+#twitch {
+  font-size: 60px;
+  border-radius: 15px;
+  color: #9572fc90;
+  transition: 0.2s;
+}
+.text-git {
+  font-weight: 350;
+  color: #d9d9f2ef;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.p-git {
+  font-weight: 300;
+  color: #a1a1aa;
+}
+#github {
+  margin-left: 440px;
+  cursor: pointer;
+  font-size: 70px;
+  border-radius: 15px;
+  color: #9572fc;
+
+  transition: 0.3s;
+}
+#github:hover {
+  transform: scale(1.2);
+}
+
+@keyframes animacao {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.botao:hover .seta {
+  animation: animacao 0.5s;
+}
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 720px) {
+  body {
+    width: 100%;
+    bottom: 100%;
+  }
+  div {
+    width: 90%;
+    margin-left: 5px;
+  }
+  #github {
+    margin-left: 280px;
+    margin-bottom: 10px;
+    font-size: 65px;
+  }
+  section {
+    padding-right: 0.9%;
+    padding-bottom: 0.9%;
+    margin-right: 1.2%;
+    border-radius: 5px 5px 10px 10px;
+    transition: 0.3s;
+  }
+  #Instagram {
+    font-size: 45px;
+  }
+  #linkedin {
+    font-size: 45px;
+  }
+  #twitch {
+    font-size: 45px;
+  }
+  #icones {
+    margin-left: 60px;
+    gap: 10px;
+  }
+  .botao{
+    margin-left: 350px;
+  }
+
+  
+}
