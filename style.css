@@ -85,14 +85,15 @@ section {
 section:hover {
   border-radius: 15px;
 }
-div:hover {
-  border-radius: 30px 5px 30px 5px;
+div:hover{
+  border-radius: 25px;
+  transition: 0.2s;
 }
 
 section div {
   background-color: #2a2634;
   opacity: 90%;
-  padding: 32px;
+  padding: 30px;
   padding-top: 24px;
   border-radius: 8px;
   transition: 0.2s;
@@ -117,18 +118,16 @@ section p {
 section ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 20px;
 
   margin-top: 24px;
 }
 
 section ul li {
   transition: transform 0.3s;
+  gap: 10px;
 }
 
-section ul li:hover {
-  transform: scale(1.1);
-}
 
 .pag-list img {
   width: 150px;
@@ -141,7 +140,7 @@ section ul li:hover {
 }
 .ia:hover {
   height: 200px;
-  border-radius: 35px 5px 30px 5px;
+  
 }
 .financeiro {
   height: 200px;
@@ -151,7 +150,8 @@ section ul li:hover {
 .financeiro:hover {
   height: 210px;
   transition: 0.2s;
-  border-radius: 30px 5px 30px 5px;
+  border-radius: 30px;
+  
 }
 .Thlinks {
   height: 200px;
@@ -160,7 +160,7 @@ section ul li:hover {
 .Thlinks:hover {
   height: 210px;
   transition: 0.2s;
-  border-radius: 30px 5px 30px 5px;
+  border-radius: 30px;
 }
 
 .channel-list img {
@@ -277,7 +277,7 @@ main section:nth-child(3) {
     transform: translateY(0);
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 640px) {
   body {
     width: 100%;
     bottom: 100%;
